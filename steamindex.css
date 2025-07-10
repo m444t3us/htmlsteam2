@@ -1,4 +1,3 @@
-
 /* GERAL */
 html, body {
     margin: 0;
@@ -8,12 +7,25 @@ html, body {
     color: #d0d0d4;
 }
 
+/* Adicione ou modifique estas regras para remover o estilo padrão dos links */
+a {
+    color: inherit; /* Faz com que o link herde a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+    color: #ffffff; /* Exemplo: define uma cor branca ao passar o mouse para indicar que é clicável */
+    /* text-decoration: underline; -- Você pode adicionar isso se quiser sublinhado SOMENTE ao passar o mouse */
+}
+
+/* Você já tinha essa regra, ela deve estar abaixo das genéricas 'a' para ter precedência se quiser sublinhado específico */
 u {
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
     color: #1c9cfc;
 }
 
+/* O restante do seu CSS... */
 .main-background {
     background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1030300/page_bg_generated_v6b.jpg?t=1603914809');
     background-repeat: no-repeat;
@@ -89,6 +101,15 @@ u {
     text-decoration: none;
     cursor: pointer;
 }
+/* Estilo para links dentro do menu2, se eles forem de texto e não tiverem o <a> envolvendo tudo */
+.menu2 li a {
+    color: inherit;
+    text-decoration: none;
+}
+.menu2 li a:hover {
+    color: #ffffff; /* Ou qualquer outra cor que você queira ao passar o mouse */
+}
+
 
 .submenu-comunidade {
     display: none;
@@ -323,13 +344,16 @@ u {
     font-size: 12px;
     margin-bottom: 5px;
 }
+/* Remova ou modifique este bloco se não quiser que os links do caminho sejam sublinhados */
 .caminho-jogo a {
     color: #8f98a0;
-    text-decoration: none;
+    text-decoration: none; /* Garante que não sejam sublinhados por padrão */
 }
 .caminho-jogo a:hover {
     color: #ffffff;
+    text-decoration: none; /* Garante que não sejam sublinhados ao passar o mouse */
 }
+
 
 .titulo-jogo {
     color: #ffffff;
@@ -415,32 +439,8 @@ u {
 .detalhes p strong {
     color: #c7d5e0;
 }
+/* Remova ou modifique este bloco se não quiser que os links de detalhes sejam sublinhados */
 .detalhes a {
     color: #67c1f5;
-    text-decoration: none;
-}
-.detalhes a:hover {
-    text-decoration: underline;
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 8px;
-}
-
-.tags span {
-    background-color: rgba(66, 107, 137, 0.5);
-    color: #67c1f5;
-    padding: 3px 8px;
-    border-radius: 3px;
-    font-size: 11px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-.tags span:hover {
-    background-color: #67c1f5;
-    color: #ffffff;
+    text-decoration: none; /* Garante que não sejam sublinhados por padrão */
 }
