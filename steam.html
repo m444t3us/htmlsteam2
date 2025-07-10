@@ -1,104 +1,106 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Bem-vindo(a) ao Steam</title>
-        <link rel="icon" href="steamicon.png.png">
-        <link rel="stylesheet" href="steamindex.css">
-        <link href="https://fonts.googleapis.com/css2?family=Motiva+Sans&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <div class = "barra">
-            <a href="">
-                <img src="steampag3.png" class="logo">
-            </a>
-            <ul class="menu">
-    <li class="has-submenu">
-        <span class="menu-item-loja">LOJA</span>
-        <ul class="submenu-loja">
-            <li>Início</li>
-            <li>Lista de descobrimento</li>
-            <li>Lista de desejos</li>
-            <li>Loja de pontos</li>
-            <li>Notícias</li>   
-            <li>Estatísticas</li>
+<head>
+    <title>Bem-vindo(a) ao Steam</title>
+    <link rel="icon" href="steamicon.png.png">
+    <link rel="stylesheet" href="steamindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Motiva+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="barra">
+        <a href=""><img src="steampag3.png" class="logo"></a>
+        <ul class="menu">
+            <li class="has-submenu">
+                <span class="menu-item-loja">LOJA</span>
+                <ul class="submenu-loja">
+                    <li>Início</li>
+                    <li>Lista de descobrimento</li>
+                    <li>Lista de desejos</li>
+                    <li>Loja de pontos</li>
+                    <li>Notícias</li>
+                    <li>Estatísticas</li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <span class="menu-item-comunidade">COMUNIDADE</span>
+                <ul class="submenu-comunidade">
+                    <li>Página inicial</li>
+                    <li>Discussões</li>
+                    <li>Oficina</li>
+                    <li>Mercado</li>
+                    <li>Transmissões</li>
+                </ul>
+            </li>
+            <li>SOBRE</li>
+            <li>SUPORTE</li>
         </ul>
-    </li>
-    <li class="has-submenu">
-        <span class="menu-item-comunidade">COMUNIDADE</span>
-        <ul class="submenu-comunidade">
-            <li>Página inicial</li> 
-            <li>Discussões</li>
-            <li>Oficina</li>
-            <li>Mercado</li>
-            <li>Transmissões</li>
+        <ul class="menu2">
+            <li style="background-color: #5c7c14; border: 6px solid #5c7c14;">
+                <img src="downloadsteam.jpeg" class="download"> Instale o Steam
+            </li>
+            <li>iniciar sessão</li>
+            <li>|</li>
+            <li class="dropdown">
+                <input type="checkbox" id="toggle-dropdown" hidden>
+                <label for="toggle-dropdown" class="dropdown-label">idioma <span class="arrow">&#9662;</span></label>
+                <ul class="submenu">
+                    <li>简体中文 (Chinês simplificado)</li>
+                    <li>繁體中文 (Chinês tradicional)</li>
+                    <li>日本語 (Japonês)</li>
+                    <li>한국어 (Coreano)</li>
+                    <li>ไทย (Tailandês)</li>
+                    <li>Български (Búlgaro)</li>
+                    <li>Čeština (Tcheco)</li>
+                    <li>Dansk (Dinamarquês)</li>
+                    <li>Deutsch (Alemão)</li>
+                    <li>English (Inglês)</li>
+                    <li>Español-España (Espanhol — Espanha)</li>
+                    <li>Español-Latinoamérica (Espanhol — América Latina)</li>
+                    <li>Ελληνικά (Grego)</li>
+                    <li>Français (Francês)</li>
+                    <li>Italiano (Italiano)</li>
+                    <li>Bahasa Indonesia (Indonésio)</li>
+                    <li>Magyar (Húngaro)</li>
+                    <li>Nederlands (Holandês)</li>
+                    <li>Norsk (Norueguês)</li>
+                    <li>Polski (Polonês)</li>
+                    <li>Português (Portugal)</li>
+                    <li>Română (Romeno)</li>
+                    <li>Русский (Russo)</li>
+                    <li>Suomi (Finlandês)</li>
+                    <li>Svenska (Sueco)</li>
+                    <li>Türkçe (Turco)</li>
+                    <li>Tiếng Việt (Vietnamita)</li>
+                    <li>Українська (Ucraniano)</li>
+                    <li>Relatar um problema com a tradução</li>
+                </ul>
+            </li>
         </ul>
-    </li>   
-    <li>SOBRE</li>
-    <li>SUPORTE</li>
-</ul>
-            <ul class="menu2">
-                <li style="background-color: #5c7c14; border: 6px solid #5c7c14;">  
-                    <img src="downloadsteam.jpeg" class="download"> Instale o Steam   
-                </li>
-                <li style="margin-top: 6px"> iniciar sessão </li>
-                <li style="margin-top: 6px"> | </li>
-                <li class="dropdown">
-                    <input type="checkbox" id="toggle-dropdown" hidden>
-                   
-                    <label for="toggle-dropdown" class="dropdown-label" style="margin-top: 4px">
-                        idioma <span class="arrow">&#9662;</span>
-                    </label>
-                    <ul class="submenu">
-                            <li>简体中文 (Chinês simplificado)</li>
-                            <li>繁體中文 (Chinês tradicional)</li>
-                            <li>日本語 (Japonês)</li>
-                            <li>한국어 (Coreano)</li>
-                            <li>ไทย (Tailandês)</li>
-                            <li>Български (Búlgaro)</li>
-                            <li>Čeština (Tcheco)</li>
-                            <li>Dansk (Dinamarquês)</li>
-                            <li>Deutsch (Alemão)</li>
-                            <li>English (Inglês)</li>
-                            <li>Español-España (Espanhol — Espanha)</li>
-                            <li>Español-Latinoamérica (Espanhol — América Latina)</li>
-                            <li>Ελληνικά (Grego)</li>
-                            <li>Français (Francês)</li>
-                            <li>Italiano (Italiano)</li>
-                            <li>Bahasa Indonesia (Indonésio)</li>
-                            <li>Magyar (Húngaro)</li>
-                            <li>Nederlands (Holandês)</li>
-                            <li>Norsk (Norueguês)</li>
-                            <li>Polski (Polonês)</li>
-                            <li>Português (Portugal)</li>
-                            <li>Română (Romeno)</li>
-                            <li>Русский (Russo)</li>
-                            <li>Suomi (Finlandês)</li>
-                            <li>Svenska (Sueco)</li>
-                            <li>Türkçe (Turco)</li>  
-                            <li>Tiếng Việt (Vietnamita)</li>
-                            <li>Українська (Ucraniano)</li>
-                            <li>Relatar um problema com a tradução</li>
-                    </ul>
-                </li>
+    </div>
+
+    <div class="fundo-video">
+        <div class="lista-pesquisa">
+            <ul>
+                <li>Sua loja</li>
+                <li>Novidades e tendências</li>
+                <li>Categorias</li>
+                <li>Loja de pontos</li>
+                <li>Notícias</li>
+                <li>Laboratório</li>
             </ul>
+            <div class="search-box">
+                <input type="text" placeholder="buscar" />
+                <button><img src="lupa.jpeg" alt="Buscar" /></button>
+            </div>
         </div>
-        <div class="fundo-video">
-            <ul class="lista-pesquisa">
-                <li> Sua loja</li>
-                <li> Novidades e tendências</li>
-                <li> Categorias</li>
-                <li> Loja de pontos</li>
-                <li> Notícias</li>
-                <li> Laboratório</li>
-            </ul>
-            <video autoplay muted loop class="video-fundo">
+
+        <a href="steamgame.html">
+            <video autoplay muted loop class="video-fundo" style="cursor: pointer;">
                 <source src="steamvideo.webm" type="video/webm">
                 <source src="steamvideo.mp4" type="video/mp4">
             </video>
-
-        </div>
-
-
-
-    </body>
+        </a>
+    </div>
+</body>
 </html>
